@@ -1,8 +1,7 @@
-const Employee = require('../lib/Employee');
 const Engineer = require('../lib/Engineer');
 
 test('ensure that the class extension works', () => {
-    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com',45);
+    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
 
  expect(engineer.name).toBe('gautam tankha');
  expect(engineer.id).toBe(1);
@@ -11,18 +10,17 @@ test('ensure that the class extension works', () => {
 });
 
 test('tests office number is working', () => {
-    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com',45);
+    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
 
- expect(engineer.officeNumber).toBe(45);
-
+ expect(engineer.gitHubUser).toBe('gtankha');
 
 });
+test('gets an engineer role', () => {
+    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
+ expect(engineer.getRole()).toBe('Engineer');
+});
 
-/* test('get the office number', () => {
-    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com');
-
- expect(engineer.name).toBe('gautam tankha');
- expect(engineer.id).toBe(1);
- expect(engineer.email).toBe('gtankha@gmail.com');
-
-}); */
+test('gets GitHub username', () => {
+    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
+ expect(engineer.getGitHub()).toBe(engineer.gitHubUser);
+});
