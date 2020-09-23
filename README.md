@@ -1,1 +1,1 @@
-# jest-another-RPG
+# Team Profile Generator
