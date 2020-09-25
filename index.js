@@ -7,7 +7,7 @@ const createHtml = require("./src/createHtml"); // creates the HTML file
 let employeeInfo = {};
 
 
-
+/*------------------------------------- Manager Questionnarie -----------------------------*/
 const employeeQuestionnaire = () => {
     return inquirer.prompt([
         {
@@ -65,6 +65,7 @@ const employeeQuestionnaire = () => {
     ]);
 }
 
+/*------------------------------------- Team Questionnarie -----------------------------*/
 
 const teamQuestionnaire = (employeeDetails) => {
     if (!employeeDetails) {
@@ -190,7 +191,7 @@ const teamQuestionnaire = (employeeDetails) => {
             when: (answers) => answers.team_member == 'Intern'
         }
     ])
-
+// recursive loop to continue with questions until finish building team is selected
         .then(teamResponse => {
 
 
@@ -248,7 +249,6 @@ employeeQuestionnaire()
       return writeToFile('./dist/output.html',html)
         }
     )
-
 
 
 

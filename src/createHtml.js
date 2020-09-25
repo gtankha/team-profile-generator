@@ -6,7 +6,7 @@ emplData.forEach(element => {
    
  if ((element.team_member) ==  'Engineer') { 
 
-    
+ // html content for engineer   
  returnText = returnText +  ` 
  <div class="card border-dark">  
     <div class="card-body bg-light">
@@ -21,7 +21,7 @@ emplData.forEach(element => {
 
 }  
 if ((element.team_member) ==  'Intern') { 
-    
+    //html content for Intern
     returnText = returnText +  `
     <div class="card border-dark">   
        <div class="card-body bg-light">
@@ -48,7 +48,7 @@ const createHtml = data => {
     const team = data.teamResponse;
 
 
-
+// return html content
     return `
   <!DOCTYPE html>
   <html lang="en">
