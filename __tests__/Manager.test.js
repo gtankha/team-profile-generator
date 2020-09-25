@@ -1,4 +1,3 @@
-
 const Manager = require('../lib/Manager');
 
 test('ensure that the class extension works', () => {
@@ -17,7 +16,7 @@ test('tests office number is working', () => {
 
 
 });
-test('gets an employees role', () => {
+test('gets a manager role', () => {
     const manager = new Manager('gautam tankha',1,'gtankha@gmail.com',45);
  expect(manager.getRole()).toBe('Manager');
 });
