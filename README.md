@@ -31,8 +31,10 @@
   <a name="license"></a> 
   ## 4. License
  ![](https://img.shields.io/badge/License-ISC-blue.svg)
- 
-  Once the package installation is complete, go ahead run the program by typing “node index” within the terminal. Answer all the questions with the required information about each team member. Once all questions are answered, an “output.html” file will be created in the dist directory. Please open that file in the browser to see the team roster.
+
+    [ISC](https://opensource.org/licenses/ISC)
+
+  URL: https://opensource.org/licenses/ISC
 
   <a name="contributing"></a>
   ## 5. Contributing
@@ -43,16 +45,9 @@
   ## 6. Test
       
   There are 4 test files using jest  (employee, engineer, intern and manager). Each field input is tested based on the questions for the employee. The tests ensure that information such as the name, ID, email and role produce valid results. Within the code, each questions is validated to ensure that there are no blanks or invalid email addresses. At this point, the assumption is that the ID can be alpha-numeric. 
-
-  <a name="license"></a> 
-  ## 7. License
       
-  [ISC](https://opensource.org/licenses/ISC)
-
-  URL: https://opensource.org/licenses/ISC
-
   <a name="questions"></a> 
-  ## 8. Questions
+  ## 7. Questions
   
   GitHub Username: gtankha
 
