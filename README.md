@@ -32,8 +32,6 @@
   ## 4. License
  ![](https://img.shields.io/badge/License-ISC-blue.svg)
 
-    [ISC](https://opensource.org/licenses/ISC)
-
   URL: https://opensource.org/licenses/ISC
 
   <a name="contributing"></a>
