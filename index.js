@@ -3,6 +3,7 @@ const Engineer = require("./lib/Engineer"); // engineer constructor
 const Manager = require("./lib/Manager"); // manager constructor
 const Intern = require("./lib/Intern"); // intern contructor
 const fs = require('fs');//file system
+const validator = require("email-validator"); // checks for valid email address
 const createHtml = require("./src/createHtml"); // creates the HTML file
 let employeeInfo = {};
 
@@ -41,11 +42,11 @@ const employeeQuestionnaire = () => {
             name: 'team_manager_email',
             message: "Please enter the team manager's e-mail address:",
             validate: nameInput => {
-                if (nameInput) {
-                    return true;
+                if (validator.validate(nameInput)) {
+                  return true;
                 } else {
-                    console.log("Team manager's email address is REQUIRED");
-                    return false;
+                  console.log('Valid email address is REQUIRED');
+                  return false;
                 }
             }
         },
@@ -111,11 +112,11 @@ const teamQuestionnaire = (employeeDetails) => {
             name: 'engineer_email',
             message: "Please enter the engineer's email:",
             validate: nameInput => {
-                if (nameInput) {
-                    return true;
+                if (validator.validate(nameInput)) {
+                  return true;
                 } else {
-                    console.log('Engineer email is REQUIRED');
-                    return false;
+                  console.log('Valid email address is REQUIRED');
+                  return false;
                 }
             },
             when: (answers) => answers.team_member == 'Engineer'
@@ -167,11 +168,11 @@ const teamQuestionnaire = (employeeDetails) => {
             name: 'intern_email',
             message: "Please enter the intern's email:",
             validate: nameInput => {
-                if (nameInput) {
-                    return true;
+                if (validator.validate(nameInput)) {
+                  return true;
                 } else {
-                    console.log('Intern email is REQUIRED');
-                    return false;
+                  console.log('Valid email address is REQUIRED');
+                  return false;
                 }
             },
             when: (answers) => answers.team_member == 'Intern'
