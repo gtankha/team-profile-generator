@@ -68,7 +68,7 @@ const createHtml = data => {
 
   <body>
      <header>
-        <h1 class = "bg-danger text-center font-weight-bold mt-2"> <span class pt-6 pb-6> My Team </span> </h1>   
+        <h1 class = "bg-danger text-light text-center font-weight-bold mt-2"> <span class pt-6 pb-6> My Team </span> </h1>   
      </header>
 
      <main>
