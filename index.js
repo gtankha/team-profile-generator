@@ -87,7 +87,7 @@ const teamQuestionnaire = (employeeDetails) => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Enginee name is REQUIRED');
+                    console.log('Engineer name is REQUIRED');
                     return false;
                 }
             },
