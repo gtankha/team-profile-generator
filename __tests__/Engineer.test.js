@@ -9,18 +9,18 @@ test('ensure that the class extension works', () => {
 
 });
 
-test('tests office number is working', () => {
+test('gitHuber username is working', () => {
     const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
 
  expect(engineer.gitHubUser).toBe('gtankha');
 
 });
-test('gets an engineer role', () => {
+test('gets an engineer email address', () => {
     const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
  expect(engineer.getRole()).toBe('Engineer');
 });
 
-test('gets GitHub username', () => {
-    const engineer = new Engineer('gautam tankha',1,'gtankha@gmail.com','gtankha');
- expect(engineer.getGitHub()).toBe(engineer.gitHubUser);
+test('gets an Engineer role', () => {
+    const intern = new Engineer('gautam tankha',1,'gtankha@gmail.com','University of Berkeley');
+ expect(intern.getRole()).toBe('Engineer');
 });

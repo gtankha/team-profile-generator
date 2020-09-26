@@ -14,7 +14,7 @@ test('tests school is working', () => {
  expect(intern.school).toBe('University of Berkeley');
 
 });
-test('gets school information', () => {
+test('gets email information', () => {
     const intern = new Intern('gautam tankha',1,'gtankha@gmail.com','gtankha','University of Berkeley');
  expect(intern.getSchool()).toBe(intern.school);
 });
